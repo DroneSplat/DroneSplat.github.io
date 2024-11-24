@@ -17,6 +17,22 @@
     <!-- 引入 MathJax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        /* 自定义样式，设置背景色和内边距 */
+        .highlight-section {
+            background-color: #f8f9fa; /* 淡灰色背景 */
+            padding: 2rem; /* 添加内边距 */
+            border-radius: 8px; /* 圆角效果 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        }
+        .publication-links {
+            margin-top: 2rem; /* 给链接部分添加顶部间距 */
+        }
+        .link-block {
+            margin-right: 1.5rem; /* 使按钮之间保持足够的间距 */
+        }
+    </style>
 </head>
 
 <body>
@@ -24,17 +40,17 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-12 has-text-centered">
+                <div class="column is-12 has-text-centered highlight-section">
                     <!-- 主标题部分 -->
                     <h1 class="title is-1 publication-title">DroneSplat: 3D Gaussian Splatting for Robust 3D Reconstruction from In-the-Wild Drone Imagery</h1>
                     <!-- 作者部分 -->
-                    <footer class="author-block" style="font-size: 30px; margin-bottom: 2.5rem;">
+                    <footer class="author-block" style="font-size: 30px; margin-bottom: 2rem;">
                         Anonymous Authors
                     </footer>
                     <!-- 相关链接部分 -->
-                    <div class="publication-links" style="margin-top: 2.5rem;">
+                    <div class="publication-links">
                         <!-- Dataset 链接部分 -->
-                        <span class="link-block" style="margin-right: 1.5rem;">
+                        <span class="link-block">
                             <a href="https://example.com/dataset_link"
                                class="button is-normal is-rounded is-info" 
                                aria-label="View Dataset">
@@ -52,7 +68,7 @@
                                 <span class="icon">
                                     <i class="fab fa-github"></i> <!-- GitHub 图标 -->
                                 </span>
-                                <span>Code</span>
+                                <span>Anonymous Code</span>
                             </a>
                         </span>
                     </div>
