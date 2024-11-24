@@ -21,10 +21,13 @@
     <style>
         /* 自定义样式，设置背景色和内边距 */
         .highlight-section {
-            background-color: #f8f9fa; /* 淡灰色背景 */
-            padding: 2rem; /* 添加内边距 */
-            border-radius: 8px; /* 圆角效果 */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+            background-color: #adadad; /* 更深的灰色背景 */
+            padding: 2rem 0; /* 添加上下内边距 */
+            width: 100vw; /* 背景宽度占满整个视口宽度 */
+            margin-left: calc(-50vw + 50%); /* 确保背景左右占满页面 */
+        }
+        .highlight-content {
+            padding: 0 2rem; /* 左右内边距 */
         }
         .publication-links {
             margin-top: 2rem; /* 给链接部分添加顶部间距 */
@@ -38,40 +41,42 @@
 <body>
     <!-- 页面主体 -->
     <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-12 has-text-centered highlight-section">
-                    <!-- 主标题部分 -->
-                    <h1 class="title is-1 publication-title">DroneSplat: 3D Gaussian Splatting for Robust 3D Reconstruction from In-the-Wild Drone Imagery</h1>
-                    <!-- 作者部分 -->
-                    <footer class="author-block" style="font-size: 30px; margin-bottom: 2rem;">
-                        Anonymous Authors
-                    </footer>
-                    <!-- 相关链接部分 -->
-                    <div class="publication-links">
-                        <!-- Dataset 链接部分 -->
-                        <span class="link-block">
-                            <a href="https://example.com/dataset_link"
-                               class="button is-normal is-rounded is-info" 
-                               aria-label="View Dataset">
-                                <span class="icon">
-                                    <i class="fas fa-database"></i> <!-- 数据集图标 -->
-                                </span>
-                                <span>Dataset</span>
-                            </a>
-                        </span>
-                        <!-- Code 链接部分 -->
-                        <span class="link-block">
-                            <a href="https://github.com/DroneSplat/anonymous_code"
-                               class="button is-normal is-rounded is-dark" 
-                               aria-label="View Anonymous Code on GitHub">
-                                <span class="icon">
-                                    <i class="fab fa-github"></i> <!-- GitHub 图标 -->
-                                </span>
-                                <span>Anonymous Code</span>
-                            </a>
-                        </span>
-                    </div>
+        <div class="highlight-section">
+            <div class="container highlight-content has-text-centered">
+                <!-- 主标题部分 -->
+                <!-- <h2 class="title is-1 publication-title">
+                DroneSplat: 3D Gaussian Splatting for Robust 3D Reconstruction from In-the-Wild Drone Imagery</h2> -->
+                <h2> DroneSplat: 3D Gaussian Splatting for Robust 3D Reconstruction</h2>
+                <h2> from In-the-Wild Drone Imagery </h2>
+                <hr>
+                <!-- 作者部分 -->
+                <footer class="author-block" style="font-size: 30px; margin-bottom: 2rem;">
+                    Anonymous Authors
+                </footer>
+                <!-- 相关链接部分 -->
+                <div class="publication-links">
+                    <!-- Dataset 链接部分 -->
+                    <span class="link-block">
+                        <a href="https://example.com/dataset_link"
+                           class="button is-normal is-rounded is-info" 
+                           aria-label="View Dataset">
+                            <span class="icon">
+                                <i class="fas fa-database"></i> <!-- 数据集图标 -->
+                            </span>
+                            <span>Dataset</span>
+                        </a>
+                    </span>
+                    <!-- Code 链接部分 -->
+                    <span class="link-block">
+                        <a href="https://github.com/DroneSplat/anonymous_code"
+                           class="button is-normal is-rounded is-dark" 
+                           aria-label="View Anonymous Code on GitHub">
+                            <span class="icon">
+                                <i class="fab fa-github"></i> <!-- GitHub 图标 -->
+                            </span>
+                            <span>Anonymous Code</span>
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
