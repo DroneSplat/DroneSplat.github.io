@@ -19,19 +19,33 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <style>
+        /* 重置 body 和 section 的默认边距，确保背景覆盖整个页面 */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            margin: 0;
+            padding: 0;
+        }
+
         /* 自定义样式，设置背景色和内边距 */
         .highlight-section {
-            background-color: #adadad; /* 更深的灰色背景 */
+            background-color: #cbcaca; /* 更深的灰色背景 */
             padding: 2rem 0; /* 添加上下内边距 */
             width: 100vw; /* 背景宽度占满整个视口宽度 */
             margin-left: calc(-50vw + 50%); /* 确保背景左右占满页面 */
         }
+
         .highlight-content {
             padding: 0 2rem; /* 左右内边距 */
         }
+
         .publication-links {
             margin-top: 2rem; /* 给链接部分添加顶部间距 */
         }
+
         .link-block {
             margin-right: 1.5rem; /* 使按钮之间保持足够的间距 */
         }
@@ -44,10 +58,8 @@
         <div class="highlight-section">
             <div class="container highlight-content has-text-centered">
                 <!-- 主标题部分 -->
-                <!-- <h2 class="title is-1 publication-title">
-                DroneSplat: 3D Gaussian Splatting for Robust 3D Reconstruction from In-the-Wild Drone Imagery</h2> -->
-                <h2> DroneSplat: 3D Gaussian Splatting for Robust 3D Reconstruction</h2>
-                <h2> from In-the-Wild Drone Imagery </h2>
+                <h1>DroneSplat: 3D Gaussian Splatting for Robust 3D Reconstruction</h1>
+                <h1>from In-the-Wild Drone Imagery</h1>
                 <hr>
                 <!-- 作者部分 -->
                 <footer class="author-block" style="font-size: 30px; margin-bottom: 2rem;">
