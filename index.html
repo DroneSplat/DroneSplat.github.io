@@ -64,11 +64,6 @@
             max-width: 1200px; /* 内容的最大宽度 */
             margin: 0 auto; /* 内容水平居中 */
         }
-        .module-content2 {
-            text-align: center; /* 模块内容居中 */
-            max-width: 1000px; /* 内容的最大宽度 */
-            margin: 0 auto; /* 内容水平居中 */
-        }
         .abstract-text {
             font-size: 1.2rem; /* 摘要文本的字体大小 */
             line-height: 1.5; /* 行距 */
@@ -82,6 +77,12 @@
             text-align: justify; /* 两端对齐 */
             margin-top: 1rem; /* 增加与图片的间距 */
             text-indent: 2em; /* 首行缩进 */
+        }
+        hr.gray-line {
+            border: none;
+            border-top: 2px solid #ccc; /* 灰色的横线 */
+            margin-top: 0.5rem; /* 增加横线的顶部间距 */
+            margin-bottom: 1.5rem; /* 增加横线的底部间距 */
         }
     </style>
 </head>
@@ -134,6 +135,7 @@
     <section class="module-section">
         <div class="container">
             <div class="module-title">Poster</div>
+            <hr class="gray-line">
             <div class="module-content">
                 <img src="images/fig1.jpg" alt="Poster Image" width="100%">
             </div>
@@ -144,6 +146,7 @@
     <section class="module-section">
         <div class="container">
             <div class="module-title">Abstract</div>
+            <hr class="gray-line">
             <div class="module-content abstract-text">
                 Drones have become essential tools for reconstructing wild scenes due to their outstanding maneuverability.
                 Recent advances in radiance field methods have achieved remarkable rendering quality, providing a new avenue
@@ -165,6 +168,7 @@
     <section class="module-section">
         <div class="container">
             <div class="module-title">Framework</div>
+            <hr class="gray-line">
             <div class="module-content">
                 <img src="images/pipeline.jpg" alt="Pipeline Image" width="100%">
                 <div class="pipe-description">
@@ -185,6 +189,7 @@
 
     <!-- 视频标题 -->
     <div class="video-title">Simingshan</div>
+    <hr class="gray-line">
 
     <!-- 视频部分 -->
     <section class="video-section">
@@ -211,6 +216,7 @@
 
     <!-- 视频标题 -->
     <div class="video-title">Sculpture</div>
+    <hr class="gray-line">
 
     <!-- 视频部分 -->
     <section class="video-section">
