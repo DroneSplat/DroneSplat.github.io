@@ -61,7 +61,7 @@
         }
         .module-content {
             text-align: center; /* 模块内容居中 */
-            max-width: 1200px; /* 内容的最大宽度 */
+            max-width: 1000px; /* 内容的最大宽度 */
             margin: 0 auto; /* 内容水平居中 */
         }
         .abstract-text {
@@ -130,7 +130,7 @@
         <div class="container">
             <div class="module-title">Poster</div>
             <div class="module-content">
-                <img src="images/fig1.jpg" alt="Poster Image" width="100%">
+                <img src="images/fig1.jpg" alt="Poster Image" width="120%">
             </div>
         </div>
     </section>
@@ -161,18 +161,18 @@
         <div class="container">
             <div class="module-title">Framework</div>
             <div class="module-content">
-                <img src="images/pipe.jpg" alt="Pipeline Image" width="100%">
+                <img src="images/pipe.jpg" alt="Pipeline Image" width="120%">
                 <div class="pipe-description">
                     Given a few posed drone imagery of a wild scene, our goal is to identify and eliminate dynamic distractors.
                     We first predict a dense point cloud through a learning-based multi-view stereo method, followed by point
                     sampling based on confidence and geometric features. The sampled point cloud is used to initialize Gaussian
-                    primitives, which is then optimized using a voxel-guided strategy. At iteration \\(t=n\\), we calculate the
+                    primitives, which is then optimized using a voxel-guided strategy. At iteration \(t=n\), we calculate the
                     normalized residual of the rendered image and combine it with the segmentation results to obtain the
                     object-wise residuals. We adaptively adjust the threshold based on the object-wise residuals and statistical
                     approaches to obtain local masks. Meanwhile, we mark objects with high residuals as tracking candidates,
-                    deriving the global set at \\(t=n\\) by combining the global set at \\(t=n-1\\) with the tracking outcomes at \\(t=n\\).
+                    deriving the global set at \(t=n\) by combining the global set at \(t=n-1\) with the tracking outcomes at \(t=n\).
                     After merging the local mask and the global mask retrieved from the global set, we can obtain the final mask
-                    at time \\(t=n\\). The mask set illustrates the dynamic distractors we predicted.
+                    at time \(t=n\). The mask set illustrates the dynamic distractors we predicted.
                 </div>
             </div>
         </div>
