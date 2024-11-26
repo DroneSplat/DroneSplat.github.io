@@ -69,6 +69,14 @@
             line-height: 1.5; /* 行距 */
             text-align: justify; /* 两端对齐 */
             margin-top: 1rem; /* 增加与标题的间距 */
+            text-indent: 2em; /* 首行缩进 */
+        }
+        .pipe-description {
+            font-size: 1rem; /* Pipeline描述的字体大小，比摘要稍小 */
+            line-height: 1.5; /* 行距 */
+            text-align: justify; /* 两端对齐 */
+            margin-top: 1rem; /* 增加与图片的间距 */
+            text-indent: 2em; /* 首行缩进 */
         }
     </style>
 </head>
@@ -154,6 +162,18 @@
             <div class="module-title">Framework</div>
             <div class="module-content">
                 <img src="images/pipe.jpg" alt="Pipeline Image" width="100%">
+                <div class="pipe-description">
+                    Given a few posed drone imagery of a wild scene, our goal is to identify and eliminate dynamic distractors.
+                    We first predict a dense point cloud through a learning-based multi-view stereo method, followed by point
+                    sampling based on confidence and geometric features. The sampled point cloud is used to initialize Gaussian
+                    primitives, which is then optimized using a voxel-guided strategy. At iteration $t=n$, we calculate the
+                    normalized residual of the rendered image and combine it with the segmentation results to obtain the
+                    object-wise residuals. We adaptively adjust the threshold based on the object-wise residuals and statistical
+                    approaches to obtain local masks. Meanwhile, we mark objects with high residuals as tracking candidates,
+                    deriving the global set at $t=n$ by combining the global set at $t=n-1$ with the tracking outcomes at $t=n$.
+                    After merging the local mask and the global mask retrieved from the global set, we can obtain the final mask
+                    at time $t=n$. The mask set illustrates the dynamic distractors we predicted.
+                </div>
             </div>
         </div>
     </section>
