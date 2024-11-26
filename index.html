@@ -29,6 +29,10 @@
         .link-block {
             margin-right: 2rem; /* 使按钮之间保持足够的间距 */
         }
+        .video-section {
+            background-color: #e2e0e0; /* 浅灰色背景 */
+            padding: 2rem 0; /* 上下内边距 */
+        }
         .video-container {
             margin-bottom: 2rem; /* 给每行的视频添加一些下边距 */
         }
@@ -43,11 +47,6 @@
             font-size: 1.5rem; /* 视频上方文本的字体大小 */
             font-weight: bold; /* 加粗文本 */
             margin-bottom: 1rem; /* 下边距使得文本和视频分隔 */
-        }
-        .video-wrapper {
-            background-color: #e2e0e0; /* 浅灰色背景 */
-            padding: 1rem; /* 给背景添加一些内边距 */
-            border-radius: 8px; /* 添加圆角效果 */
         }
     </style>
 </head>
@@ -97,24 +96,22 @@
     </section>
 
     <!-- 视频部分 -->
-    <div class="container mt-5">
-        <!-- 视频标题 -->
-        <div class="video-title">Simingshan</div>
-        <!-- 视频行 -->
-        <div class="row video-container">
-            <!-- 第一个视频及其标题 -->
-            <div class="col-md-6">
-                <div class="video-wrapper">
+    <section class="video-section">
+        <div class="container">
+            <!-- 视频标题 -->
+            <div class="video-title">Simingshan</div>
+            <!-- 视频行 -->
+            <div class="row video-container">
+                <!-- 第一个视频及其标题 -->
+                <div class="col-md-6">
                     <div class="video-label">3DGS</div>
                     <video controls width="100%">
                         <source src="videos/simingshan/simingshan_3dgs.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
-            </div>
-            <!-- 第二个视频及其标题 -->
-            <div class="col-md-6">
-                <div class="video-wrapper">
+                <!-- 第二个视频及其标题 -->
+                <div class="col-md-6">
                     <div class="video-label">DroneSplat</div>
                     <video controls width="100%">
                         <source src="videos/simingshan/simingshan_dronesplat.mp4" type="video/mp4">
@@ -123,7 +120,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- 引入 Bootstrap JavaScript (可选) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
