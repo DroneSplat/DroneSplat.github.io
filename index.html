@@ -29,6 +29,21 @@
         .link-block {
             margin-right: 2rem; /* 使按钮之间保持足够的间距 */
         }
+        .video-container {
+            margin-bottom: 2rem; /* 给每行的视频添加一些下边距 */
+        }
+        .video-title {
+            font-size: 2rem; /* 视频标题的字体大小 */
+            font-weight: bold; /* 加粗标题 */
+            margin-top: 2rem; /* 标题的顶部间距 */
+            text-align: center; /* 居中显示标题 */
+        }
+        .video-label {
+            text-align: center; /* 居中视频标签 */
+            font-size: 1.5rem; /* 视频上方文本的字体大小 */
+            font-weight: bold; /* 加粗文本 */
+            margin-bottom: 1rem; /* 下边距使得文本和视频分隔 */
+        }
     </style>
 </head>
 
@@ -36,46 +51,74 @@
     <section>
         <!-- 内容划分元素 -->
         <div class="jumbotron text-center mt-0"> <!--jumbotron类可用于创建具有特殊样式的大型容器，text-center类用于居中文本，而mt-0类用于删除顶部的外边距-->
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h2 class="large-title"> DroneSplat: 3D Gaussian Splatting for Robust 3D Reconstruction</h2>
-                <h2 class="large-title"> from In-the-Wild Drone Imagery </h2>
-                <!-- <h4 style="margin-top:20px; margin-bottom:20px; color:#717980"> Current state: Continue Updating(last time:2024.4.7)</h4> -->
-                <hr>
-                <footer class="author-block" style="font-size: 30px; margin-bottom: 2rem;">
-                    Anonymous Authors
-                </footer>
-                <!-- 相关链接部分 -->
-                <div class="publication-links">
-                    <!-- Dataset 链接部分 -->
-                    <span class="link-block">
-                        <a href=" "
-                           class="button is-normal is-rounded is-info" 
-                           aria-label="View Dataset">
-                            <span class="icon">
-                                <i class="fas fa-database"></i> <!-- 数据集图标 -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="large-title"> DroneSplat: 3D Gaussian Splatting for Robust 3D Reconstruction</h2>
+                        <h2 class="large-title"> from In-the-Wild Drone Imagery </h2>
+                        <hr>
+                        <footer class="author-block" style="font-size: 30px; margin-bottom: 2rem;">
+                            Anonymous Authors
+                        </footer>
+                        <!-- 相关链接部分 -->
+                        <div class="publication-links">
+                            <!-- Dataset 链接部分 -->
+                            <span class="link-block">
+                                <a href=" "
+                                   class="button is-normal is-rounded is-info" 
+                                   aria-label="View Dataset">
+                                    <span class="icon">
+                                        <i class="fas fa-database"></i> <!-- 数据集图标 -->
+                                    </span>
+                                    <span>DroneSplat Dataset</span>
+                                </a>
                             </span>
-                            <span>DroneSplat Dataset</span>
-                        </a>
-                    </span>
-                    <!-- Code 链接部分 -->
-                    <span class="link-block">
-                        <a href="https://github.com/DroneSplat/anonymous_code"
-                           class="button is-normal is-rounded is-dark" 
-                           aria-label="View Anonymous Code on GitHub">
-                            <span class="icon">
-                                <i class="fab fa-github"></i> <!-- GitHub 图标 -->
+                            <!-- Code 链接部分 -->
+                            <span class="link-block">
+                                <a href="https://github.com/DroneSplat/anonymous_code"
+                                   class="button is-normal is-rounded is-dark" 
+                                   aria-label="View Anonymous Code on GitHub">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i> <!-- GitHub 图标 -->
+                                    </span>
+                                    <span>Anonymous Code</span>
+                                </a>
                             </span>
-                            <span>Anonymous Code</span>
-                        </a>
-                    </span>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
+    <!-- 视频部分 -->
+    <div class="container mt-5">
+        <!-- 视频标题 -->
+        <div class="video-title">Simingshan</div>
+        <!-- 视频行 -->
+        <div class="row video-container">
+            <!-- 第一个视频及其标题 -->
+            <div class="col-md-6">
+                <div class="video-label">3DGS</div>
+                <video controls width="100%">
+                    <source src="videos/simingshan/simingshan_3dgs.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- 第二个视频及其标题 -->
+            <div class="col-md-6">
+                <div class="video-label">DroneSplat</div>
+                <video controls width="100%">
+                    <source src="videos/simingshan/simingshan_dronesplat.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入 Bootstrap JavaScript (可选) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
