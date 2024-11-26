@@ -61,6 +61,11 @@
         }
         .module-content {
             text-align: center; /* 模块内容居中 */
+            max-width: 1200px; /* 内容的最大宽度 */
+            margin: 0 auto; /* 内容水平居中 */
+        }
+        .module-content2 {
+            text-align: center; /* 模块内容居中 */
             max-width: 1000px; /* 内容的最大宽度 */
             margin: 0 auto; /* 内容水平居中 */
         }
@@ -130,7 +135,7 @@
         <div class="container">
             <div class="module-title">Poster</div>
             <div class="module-content">
-                <img src="images/fig1.jpg" alt="Poster Image" width="120%">
+                <img src="images/fig1.jpg" alt="Poster Image" width="100%">
             </div>
         </div>
     </section>
@@ -139,7 +144,7 @@
     <section class="module-section">
         <div class="container">
             <div class="module-title">Abstract</div>
-            <div class="module-content abstract-text">
+            <div class="module-content2 abstract-text">
                 Drones have become essential tools for reconstructing wild scenes due to their outstanding maneuverability.
                 Recent advances in radiance field methods have achieved remarkable rendering quality, providing a new avenue
                 for 3D reconstruction from drone imagery. However, dynamic distractors in wild environments challenge the
@@ -161,7 +166,7 @@
         <div class="container">
             <div class="module-title">Framework</div>
             <div class="module-content">
-                <img src="images/pipe.jpg" alt="Pipeline Image" width="120%">
+                <img src="images/pipeline.jpg" alt="Pipeline Image" width="100%">
                 <div class="pipe-description">
                     Given a few posed drone imagery of a wild scene, our goal is to identify and eliminate dynamic distractors.
                     We first predict a dense point cloud through a learning-based multi-view stereo method, followed by point
