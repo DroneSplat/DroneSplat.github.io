@@ -44,6 +44,11 @@
             font-weight: bold; /* 加粗文本 */
             margin-bottom: 1rem; /* 下边距使得文本和视频分隔 */
         }
+        .video-wrapper {
+            background-color: #e2e0e0; /* 浅灰色背景 */
+            padding: 1rem; /* 给背景添加一些内边距 */
+            border-radius: 8px; /* 添加圆角效果 */
+        }
     </style>
 </head>
 
@@ -99,19 +104,23 @@
         <div class="row video-container">
             <!-- 第一个视频及其标题 -->
             <div class="col-md-6">
-                <div class="video-label">3DGS</div>
-                <video controls width="100%">
-                    <source src="videos/simingshan/simingshan_3dgs.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="video-wrapper">
+                    <div class="video-label">3DGS</div>
+                    <video controls width="100%">
+                        <source src="videos/simingshan/simingshan_3dgs.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
             <!-- 第二个视频及其标题 -->
             <div class="col-md-6">
-                <div class="video-label">DroneSplat</div>
-                <video controls width="100%">
-                    <source src="videos/simingshan/simingshan_dronesplat.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="video-wrapper">
+                    <div class="video-label">DroneSplat</div>
+                    <video controls width="100%">
+                        <source src="videos/simingshan/simingshan_dronesplat.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
