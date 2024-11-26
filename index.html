@@ -30,8 +30,8 @@
             margin-right: 2rem; /* 使按钮之间保持足够的间距 */
         }
         .video-section {
-            background-color: #e2e0e0; /* 浅灰色背景 */
-            padding: 1rem 0 1rem 0; /* 上下内边距调整为 1rem 和 1.5rem，以减小间距 */
+            background-color: #f0f0f0; /* 浅灰色背景 */
+            padding: 1rem 0; /* 上下内边距调整为 1rem */
         }
         .video-container {
             margin-bottom: 1.5rem; /* 减少每行视频部分的下边距 */
@@ -49,6 +49,26 @@
             font-weight: bold; /* 加粗文本 */
             margin-bottom: 0.7rem; /* 减小文本与视频之间的间距 */
             margin-top: 0.3rem; /* 减小视频标签与灰色背景上边沿的间距 */
+        }
+        .module-section {
+            margin: 2rem 0; /* 为每个模块添加一些垂直间距 */
+        }
+        .module-title {
+            font-size: 2rem; /* 模块标题的字体大小 */
+            font-weight: bold; /* 模块标题加粗 */
+            text-align: center; /* 模块标题居中 */
+            margin-bottom: 1rem; /* 模块标题的底部间距 */
+        }
+        .module-content {
+            text-align: center; /* 模块内容居中 */
+            max-width: 800px; /* 内容的最大宽度 */
+            margin: 0 auto; /* 内容水平居中 */
+        }
+        .abstract-text {
+            font-size: 1.2rem; /* 摘要文本的字体大小 */
+            line-height: 1.5; /* 行距 */
+            text-align: justify; /* 两端对齐 */
+            margin-top: 1rem; /* 增加与标题的间距 */
         }
     </style>
 </head>
@@ -93,6 +113,47 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poster 模块 -->
+    <section class="module-section">
+        <div class="container">
+            <div class="module-title">Poster</div>
+            <div class="module-content">
+                <img src="images/fig1.jpg" alt="Poster Image" width="80%">
+            </div>
+        </div>
+    </section>
+
+    <!-- Abstract 模块 -->
+    <section class="module-section">
+        <div class="container">
+            <div class="module-title">Abstract</div>
+            <div class="module-content abstract-text">
+                Drones have become essential tools for reconstructing wild scenes due to their outstanding maneuverability.
+                Recent advances in radiance field methods have achieved remarkable rendering quality, providing a new avenue
+                for 3D reconstruction from drone imagery. However, dynamic distractors in wild environments challenge the
+                static scene assumption in radiance fields, while limited view constraints hinder the accurate capture of
+                underlying scene geometry. To address these challenges, we introduce DroneSplat, a novel framework designed
+                for robust 3D reconstruction from in-the-wild drone imagery. Our method adaptively adjusts masking thresholds
+                by integrating local-global segmentation heuristics with statistical approaches, enabling precise identification
+                and elimination of dynamic distractors in static scenes. We enhance 3D Gaussian Splatting with multi-view stereo
+                predictions and a voxel-guided optimization strategy, supporting high-quality rendering under limited view
+                constraints. For comprehensive evaluation, we provide a drone-captured 3D reconstruction dataset encompassing
+                both dynamic and static scenes. Extensive experiments demonstrate that DroneSplat outperforms both 3DGS and
+                NeRF baselines in handling in-the-wild drone imagery.
+            </div>
+        </div>
+    </section>
+
+    <!-- Pipeline 模块 -->
+    <section class="module-section">
+        <div class="container">
+            <div class="module-title">Pipeline</div>
+            <div class="module-content">
+                <img src="pipe.jpg" alt="Pipeline Image" width="80%">
             </div>
         </div>
     </section>
