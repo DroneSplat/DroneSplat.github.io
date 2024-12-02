@@ -231,6 +231,8 @@
         <button class="btn btn-primary" onclick="playAllVideos()" style="margin-left: 20px;">Play Videos</button>
         <!-- Stop 按钮 -->
         <button class="btn btn-danger" onclick="stopAllVideos()" style="margin-left: 10px;">Stop Videos</button>
+        <!-- Restart 按钮 -->
+        <button class="btn btn-warning" onclick="restartAllVideos()" style="margin-left: 10px;">Restart</button>
     </div>
 
     <!-- 视频部分 -->
@@ -416,6 +418,23 @@
             simingshan_video1.pause();
             simingshan_video2.pause();
             simingshan_video3.pause();
+        }
+
+        // 重置所有视频并从头播放
+        function restartAllVideos() {
+            var simingshan_video1 = document.getElementById("simingshan_video1");
+            var simingshan_video2 = document.getElementById("simingshan_video2");
+            var simingshan_video3 = document.getElementById("simingshan_video3");
+
+            // 重置播放位置为 0（从头开始）
+            simingshan_video1.currentTime = 0;
+            simingshan_video2.currentTime = 0;
+            simingshan_video3.currentTime = 0;
+
+            // 播放所有视频
+            simingshan_video1.play();
+            simingshan_video2.play();
+            simingshan_video3.play();
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
