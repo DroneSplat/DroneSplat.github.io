@@ -89,22 +89,6 @@
             margin-top: 0rem; /* 增加横线的顶部间距 */
             margin-bottom: 1.5rem; /* 增加横线的底部间距 */
         }
-        .header-container {
-        display: flex; 
-        justify-content: center; /* 中心对齐 */
-        align-items: center; /* 垂直居中 */
-        position: relative; /* 为了定位按钮容器 */
-        width: 100%;
-        }
-        .video-texttitle {
-        margin-right: 10px; /* 给标题右边添加 10px 间距 */
-        }
-        .button-container {
-        display: flex; /* 水平排列按钮 */
-        gap: 10px; /* 按钮之间添加间距 */
-        position: absolute; /* 定位按钮 */
-        right: 10px; /* 将按钮容器放在右边 10px 处 */
-        }
     </style>
 </head>
 
@@ -211,16 +195,16 @@
 
 
     <!-- 视频标题 -->
-    <div class="header-container">
-        <h1 class="video-texttitle">Simingshan</h1>
-        <div class="button-container">
-            <!-- Play 按钮 -->
-            <button class="btn btn-success" onclick="playAllVideos_simingshan()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
-            <!-- Stop 按钮 -->
-            <button class="btn btn-danger" onclick="stopAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
-            <!-- Restart 按钮 -->
-            <button class="btn btn-info" onclick="restartAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Restart</button>
-        </div>
+    <div class="video-title">
+        Simingshan
+    </div>
+    <div class="video-title">
+        <!-- Play 按钮 -->
+        <button class="btn btn-success" onclick="playAllVideos_simingshan()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
+        <!-- Stop 按钮 -->
+        <button class="btn btn-danger" onclick="stopAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
+        <!-- Restart 按钮 -->
+        <button class="btn btn-info" onclick="restartAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Restart</button>
     </div>
     <!-- 视频部分 -->
     <section class="video-section">
