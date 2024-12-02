@@ -193,16 +193,23 @@
     </section>
 
 
+
     <!-- 视频标题 -->
-    <div class="video-title">
-        Simingshan
-        <!-- Play 按钮 -->
-        <button class="btn btn-success" onclick="playAllVideos_simingshan()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
-        <!-- Stop 按钮 -->
-        <button class="btn btn-danger" onclick="stopAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
-        <!-- Restart 按钮 -->
-        <button class="btn btn-info" onclick="restartAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Restart</button>
+    <div class="d-flex justify-content-center align-items-center" style="width: 100%; padding-bottom: 20px;">
+        <div class="video-title">
+            Simingshan
+        </div>
+        <!-- 视频控制按钮区域 -->
+        <div class="ml-auto">
+           <!-- Play 按钮 -->
+            <button class="btn btn-success" onclick="playAllVideos_simingshan()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
+            <!-- Stop 按钮 -->
+            <button class="btn btn-danger" onclick="stopAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
+            <!-- Restart 按钮 -->
+            <button class="btn btn-info" onclick="restartAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Restart</button>
+        </div>
     </div>
+
 
     <!-- 视频部分 -->
     <section class="video-section">
@@ -259,14 +266,14 @@
                 <!-- 第二个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">GS-W</div>
-                    <video id="pavilion_video1" controls width="100%">
+                    <video id="pavilion_video2" controls width="100%">
                         <source src="videos/pavilion/pavilion_gsw.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第三个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">DroneSplat</div>
-                    <video id="pavilion_video1" controls width="100%">
+                    <video id="pavilion_video3" controls width="100%">
                         <source src="videos/pavilion/pavilion_dronesplat.mp4" type="video/mp4">
                     </video>
                 </div>
