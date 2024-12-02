@@ -244,6 +244,8 @@
     <!-- 视频标题 -->
     <div class="video-title">
         Pavilion
+    </div>
+    <div class="video-bottom">
         <!-- Play 按钮 -->
         <button class="btn btn-success" onclick="playAllVideos_pavilion()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
         <!-- Stop 按钮 -->
@@ -282,7 +284,17 @@
     </section>
 
     <!-- 视频标题 -->
-    <div class="video-title">TangTian</div>
+    <div class="video-title">
+        TangTian
+    </div>
+    <div class="video-bottom">
+        <!-- Play 按钮 -->
+        <button class="btn btn-success" onclick="playAllVideos_tangtian()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
+        <!-- Stop 按钮 -->
+        <button class="btn btn-danger" onclick="stopAllVideos_tangtian()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
+        <!-- Restart 按钮 -->
+        <button class="btn btn-info" onclick="restartAllVideos_tangtian()" style="margin-left: 10px; font-weight: bold; width: 80px;">Restart</button>
+    </div>
     <!-- 视频部分 -->
     <section class="video-section">
         <div class="container">
@@ -291,21 +303,21 @@
                 <!-- 第一个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">3DGS</div>
-                    <video controls width="100%">
+                    <video id="tangtian_video1" controls width="100%">
                         <source src="videos/tangtian/tangtian_3dgs.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第二个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">GS-W</div>
-                    <video controls width="100%">
+                    <video id="tangtian_video2" controls width="100%">
                         <source src="videos/tangtian/tangtian_gsw.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第三个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">DroneSplat</div>
-                    <video controls width="100%">
+                    <video id="tangtian_video3" controls width="100%">
                         <source src="videos/tangtian/tangtian_dronesplat.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -314,7 +326,17 @@
     </section>
 
     <!-- 视频标题 -->
-    <div class="video-title">Cultural Center</div>
+    <div class="video-title">
+        Cultural Center
+    </div>
+    <div class="video-bottom">
+        <!-- Play 按钮 -->
+        <button class="btn btn-success" onclick="playAllVideos_cultural_center()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
+        <!-- Stop 按钮 -->
+        <button class="btn btn-danger" onclick="stopAllVideos_cultural_center()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
+        <!-- Restart 按钮 -->
+        <button class="btn btn-info" onclick="restartAllVideos_cultural_center()" style="margin-left: 10px; font-weight: bold; width: 80px;">Restart</button>
+    </div>
     <!-- 视频部分 -->
     <section class="video-section">
         <div class="container">
@@ -323,21 +345,21 @@
                 <!-- 第一个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">3DGS</div>
-                    <video controls width="100%">
+                    <video id="cultural_center_video1" controls width="100%">
                         <source src="videos/cultural_center/cultural_center_3dgs.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第二个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">GS-W</div>
-                    <video controls width="100%">
+                    <video id="cultural_center_video2" controls width="100%">
                         <source src="videos/cultural_center/cultural_center_gsw.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第三个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">DroneSplat</div>
-                    <video controls width="100%">
+                    <video id="cultural_center_video3" controls width="100%">
                         <source src="videos/cultural_center/cultural_center_dronesplat.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -346,7 +368,17 @@
     </section>
 
     <!-- 视频标题 -->
-    <div class="video-title">Sculpture</div>
+    <div class="video-title">
+        Sculpture
+    </div>
+    <div class="video-bottom">
+        <!-- Play 按钮 -->
+        <button class="btn btn-success" onclick="playAllVideos_sculpture()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
+        <!-- Stop 按钮 -->
+        <button class="btn btn-danger" onclick="stopAllVideos_sculpture()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
+        <!-- Restart 按钮 -->
+        <button class="btn btn-info" onclick="restartAllVideos_sculpture()" style="margin-left: 10px; font-weight: bold; width: 80px;">Restart</button>
+    </div>
     <!-- 视频部分 -->
     <section class="video-section">
         <div class="container">
@@ -355,21 +387,21 @@
                 <!-- 第一个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">3DGS</div>
-                    <video controls width="100%">
+                    <video id="sculpture_video1" controls width="100%">
                         <source src="videos/sculpture/sculpture_3dgs.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第二个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">GS-W</div>
-                    <video controls width="100%">
+                    <video id="sculpture_video2" controls width="100%">
                         <source src="videos/sculpture/sculpture_gsw.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第三个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">DroneSplat</div>
-                    <video controls width="100%">
+                    <video id="sculpture_video3" controls width="100%">
                         <source src="videos/sculpture/sculpture_dronesplat.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -380,6 +412,7 @@
 
     <!-- 引入 Bootstrap JavaScript (可选) -->
     <script>
+        // Simingshan
         // 播放所有视频
         function playAllVideos_simingshan() {
             var simingshan_video1 = document.getElementById("simingshan_video1");
@@ -420,7 +453,8 @@
             simingshan_video2.play();
             simingshan_video3.play();
         }
-
+        
+        // Pavilion
         // 播放所有视频
         function playAllVideos_pavilion() {
             var pavilion_video1 = document.getElementById("pavilion_video1");
@@ -460,6 +494,132 @@
             pavilion_video1.play();
             pavilion_video2.play();
             pavilion_video3.play();
+        }
+
+        // TangTian
+        // 播放所有视频
+        function playAllVideos_tangtian() {
+            var tangtian_video1 = document.getElementById("tangtian_video1");
+            var tangtian_video2 = document.getElementById("tangtian_video2");
+            var tangtian_video3 = document.getElementById("tangtian_video3");
+    
+            // 同时播放所有视频
+            tangtian_video1.play();
+            tangtian_video2.play();
+            tangtian_video3.play();
+        }
+    
+        // 停止所有视频，并保持在当前播放位置
+        function stopAllVideos_tangtian() {
+            var tangtian_video1 = document.getElementById("tangtian_video1");
+            var tangtian_video2 = document.getElementById("tangtian_video2");
+            var tangtian_video3 = document.getElementById("tangtian_video3");
+    
+            // 暂停所有视频
+            tangtian_video1.pause();
+            tangtian_video2.pause();
+            tangtian_video3.pause();
+        }
+
+        // 重置所有视频并从头播放
+        function restartAllVideos_tangtian() {
+            var tangtian_video1 = document.getElementById("tangtian_video1");
+            var tangtian_video2 = document.getElementById("tangtian_video2");
+            var tangtian_video3 = document.getElementById("tangtian_video3");
+
+            // 重置播放位置为 0（从头开始）
+            tangtian_video1.currentTime = 0;
+            tangtian_video2.currentTime = 0;
+            tangtian_video3.currentTime = 0;
+
+            // 播放所有视频
+            tangtian_video1.play();
+            tangtian_video2.play();
+            tangtian_video3.play();
+        }
+
+        // Cultural Center
+        // 播放所有视频
+        function playAllVideos_cultural_center() {
+            var cultural_center_video1 = document.getElementById("cultural_center_video1");
+            var cultural_center_video2 = document.getElementById("cultural_center_video2");
+            var cultural_center_video3 = document.getElementById("cultural_center_video3");
+    
+            // 同时播放所有视频
+            cultural_center_video1.play();
+            cultural_center_video2.play();
+            cultural_center_video3.play();
+        }
+    
+        // 停止所有视频，并保持在当前播放位置
+        function stopAllVideos_cultural_center() {
+            var cultural_center_video1 = document.getElementById("cultural_center_video1");
+            var cultural_center_video2 = document.getElementById("cultural_center_video2");
+            var cultural_center_video3 = document.getElementById("cultural_center_video3");
+    
+            // 暂停所有视频
+            cultural_center_video1.pause();
+            cultural_center_video2.pause();
+            cultural_center_video3.pause();
+        }
+
+        // 重置所有视频并从头播放
+        function restartAllVideos_cultural_center() {
+            var cultural_center_video1 = document.getElementById("cultural_center_video1");
+            var cultural_center_video2 = document.getElementById("cultural_center_video2");
+            var cultural_center_video3 = document.getElementById("cultural_center_video3");
+
+            // 重置播放位置为 0（从头开始）
+            cultural_center_video1.currentTime = 0;
+            cultural_center_video2.currentTime = 0;
+            cultural_center_video3.currentTime = 0;
+
+            // 播放所有视频
+            cultural_center_video1.play();
+            cultural_center_video2.play();
+            cultural_center_video3.play();
+        }
+
+        // Sculpture
+        // 播放所有视频
+        function playAllVideos_sculpture() {
+            var sculpture_video1 = document.getElementById("sculpture_video1");
+            var sculpture_video2 = document.getElementById("sculpture_video2");
+            var sculpture_video3 = document.getElementById("sculpture_video3");
+    
+            // 同时播放所有视频
+            sculpture_video1.play();
+            sculpture_video2.play();
+            sculpture_video3.play();
+        }
+    
+        // 停止所有视频，并保持在当前播放位置
+        function stopAllVideos_sculpture() {
+            var sculpture_video1 = document.getElementById("sculpture_video1");
+            var sculpture_video2 = document.getElementById("sculpture_video2");
+            var sculpture_video3 = document.getElementById("sculpture_video3");
+    
+            // 暂停所有视频
+            sculpture_video1.pause();
+            sculpture_video2.pause();
+            sculpture_video3.pause();
+        }
+
+        // 重置所有视频并从头播放
+        function restartAllVideos_sculpture() {
+            var sculpture_video1 = document.getElementById("sculpture_video1");
+            var sculpture_video2 = document.getElementById("sculpture_video2");
+            var sculpture_video3 = document.getElementById("sculpture_video3");
+
+            // 重置播放位置为 0（从头开始）
+            sculpture_video1.currentTime = 0;
+            sculpture_video2.currentTime = 0;
+            sculpture_video3.currentTime = 0;
+
+            // 播放所有视频
+            sculpture_video1.play();
+            sculpture_video2.play();
+            sculpture_video3.play();
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
