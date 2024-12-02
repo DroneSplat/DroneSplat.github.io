@@ -241,21 +241,21 @@
                 <!-- 第一个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">3DGS</div>
-                    <video id="video1" controls width="100%">
+                    <video id="simingshan_video1" controls width="100%">
                         <source src="videos/simingshan/simingshan_3dgs.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第二个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">GS-W</div>
-                    <video id="video2" controls width="100%">
+                    <video id="simingshan_video2" controls width="100%">
                         <source src="videos/simingshan/simingshan_gsw.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第三个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">DroneSplat</div>
-                    <video id="video3" controls width="100%">
+                    <video id="simingshan_video3" controls width="100%">
                         <source src="videos/simingshan/simingshan_dronesplat.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -396,31 +396,26 @@
     <script>
         // 播放所有视频
         function playAllVideos() {
-            var video1 = document.getElementById("video1");
-            var video2 = document.getElementById("video2");
-            var video3 = document.getElementById("video3");
+            var simingshan_video1 = document.getElementById("simingshan_video1");
+            var simingshan_video2 = document.getElementById("simingshan_video2");
+            var simingshan_video3 = document.getElementById("simingshan_video3");
     
             // 同时播放所有视频
-            video1.play();
-            video2.play();
-            video3.play();
+            simingshan_video1.play();
+            simingshan_video2.play();
+            simingshan_video3.play();
         }
     
-        // 停止所有视频
+        // 停止所有视频，并保持在当前播放位置
         function stopAllVideos() {
-            var video1 = document.getElementById("video1");
-            var video2 = document.getElementById("video2");
-            var video3 = document.getElementById("video3");
+            var simingshan_video1 = document.getElementById("simingshan_video1");
+            var simingshan_video2 = document.getElementById("simingshan_video2");
+            var simingshan_video3 = document.getElementById("simingshan_video3");
     
-            // 暂停所有视频并重置播放进度
-            video1.pause();
-            video2.pause();
-            video3.pause();
-    
-            // 重置播放位置为视频开始处
-            video1.currentTime = 0;
-            video2.currentTime = 0;
-            video3.currentTime = 0;
+            // 暂停所有视频
+            simingshan_video1.pause();
+            simingshan_video2.pause();
+            simingshan_video3.pause();
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
