@@ -225,6 +225,43 @@
     </section>
 
     <!-- 视频标题 -->
+    <div class="video-title">
+        Simingshan
+        <!-- Play 按钮 -->
+        <button class="btn btn-primary" onclick="playAllVideos()" style="margin-left: 20px;">Play All Videos</button>
+    </div>
+
+    <!-- 视频部分 -->
+    <section class="video-section">
+        <div class="container">
+            <!-- 视频行 -->
+            <div class="row video-container">
+                <!-- 第一个视频及其标题 -->
+                <div class="col-md-4">
+                    <div class="video-label">3DGS</div>
+                    <video id="video1" controls width="100%">
+                        <source src="videos/simingshan/simingshan_3dgs.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <!-- 第二个视频及其标题 -->
+                <div class="col-md-4">
+                    <div class="video-label">GS-W</div>
+                    <video id="video2" controls width="100%">
+                        <source src="videos/simingshan/simingshan_gsw.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <!-- 第三个视频及其标题 -->
+                <div class="col-md-4">
+                    <div class="video-label">DroneSplat</div>
+                    <video id="video3" controls width="100%">
+                        <source src="videos/simingshan/simingshan_dronesplat.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频标题 -->
     <div class="video-title">Pavilion</div>
     <!-- 视频部分 -->
     <section class="video-section">
@@ -354,6 +391,19 @@
 
 
     <!-- 引入 Bootstrap JavaScript (可选) -->
+    <script>
+        function playAllVideos() {
+            // 获取每个视频元素
+            var video1 = document.getElementById("video1");
+            var video2 = document.getElementById("video2");
+            var video3 = document.getElementById("video3");
+    
+            // 同时播放所有视频
+            video1.play();
+            video2.play();
+            video3.play();
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
