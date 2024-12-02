@@ -192,47 +192,16 @@
         </div>
     </section>
 
-    <!-- 视频标题 -->
-    <div class="video-title">Simingshan</div>
-    <!-- 视频部分 -->
-    <section class="video-section">
-        <div class="container">
-            <!-- 视频行 -->
-            <div class="row video-container">
-                <!-- 第一个视频及其标题 -->
-                <div class="col-md-4">
-                    <div class="video-label">3DGS</div>
-                    <video controls width="100%">
-                        <source src="videos/simingshan/simingshan_3dgs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <!-- 第二个视频及其标题 -->
-                <div class="col-md-4">
-                    <div class="video-label">GS-W</div>
-                    <video controls width="100%">
-                        <source src="videos/simingshan/simingshan_gsw.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <!-- 第三个视频及其标题 -->
-                <div class="col-md-4">
-                    <div class="video-label">DroneSplat</div>
-                    <video controls width="100%">
-                        <source src="videos/simingshan/simingshan_dronesplat.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- 视频标题 -->
     <div class="video-title">
         Simingshan
         <!-- Play 按钮 -->
-        <button class="btn btn-success" onclick="playAllVideos()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
+        <button class="btn btn-success" onclick="playAllVideos_simingshan()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
         <!-- Stop 按钮 -->
-        <button class="btn btn-danger" onclick="stopAllVideos()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
+        <button class="btn btn-danger" onclick="stopAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
         <!-- Restart 按钮 -->
-        <button class="btn btn-info" onclick="restartAllVideos()" style="margin-left: 10px; font-weight: bold; width: 80px;">Restart</button>
+        <button class="btn btn-info" onclick="restartAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Restart</button>
     </div>
 
     <!-- 视频部分 -->
@@ -266,7 +235,15 @@
     </section>
 
     <!-- 视频标题 -->
-    <div class="video-title">Pavilion</div>
+    <div class="video-title">
+        Pavilion
+        <!-- Play 按钮 -->
+        <button class="btn btn-success" onclick="playAllVideos_pavilion()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
+        <!-- Stop 按钮 -->
+        <button class="btn btn-danger" onclick="stopAllVideos_pavilion()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
+        <!-- Restart 按钮 -->
+        <button class="btn btn-info" onclick="restartAllVideos_pavilion()" style="margin-left: 10px; font-weight: bold; width: 80px;">Restart</button>
+    </div>
     <!-- 视频部分 -->
     <section class="video-section">
         <div class="container">
@@ -275,21 +252,21 @@
                 <!-- 第一个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">3DGS</div>
-                    <video controls width="100%">
+                    <video id="pavilion_video1" controls width="100%">
                         <source src="videos/pavilion/pavilion_3dgs.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第二个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">GS-W</div>
-                    <video controls width="100%">
+                    <video id="pavilion_video1" controls width="100%">
                         <source src="videos/pavilion/pavilion_gsw.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第三个视频及其标题 -->
                 <div class="col-md-4">
                     <div class="video-label">DroneSplat</div>
-                    <video controls width="100%">
+                    <video id="pavilion_video1" controls width="100%">
                         <source src="videos/pavilion/pavilion_dronesplat.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -397,7 +374,7 @@
     <!-- 引入 Bootstrap JavaScript (可选) -->
     <script>
         // 播放所有视频
-        function playAllVideos() {
+        function playAllVideos_simingshan() {
             var simingshan_video1 = document.getElementById("simingshan_video1");
             var simingshan_video2 = document.getElementById("simingshan_video2");
             var simingshan_video3 = document.getElementById("simingshan_video3");
@@ -409,7 +386,7 @@
         }
     
         // 停止所有视频，并保持在当前播放位置
-        function stopAllVideos() {
+        function stopAllVideos_simingshan() {
             var simingshan_video1 = document.getElementById("simingshan_video1");
             var simingshan_video2 = document.getElementById("simingshan_video2");
             var simingshan_video3 = document.getElementById("simingshan_video3");
@@ -421,7 +398,7 @@
         }
 
         // 重置所有视频并从头播放
-        function restartAllVideos() {
+        function restartAllVideos_simingshan() {
             var simingshan_video1 = document.getElementById("simingshan_video1");
             var simingshan_video2 = document.getElementById("simingshan_video2");
             var simingshan_video3 = document.getElementById("simingshan_video3");
@@ -435,6 +412,47 @@
             simingshan_video1.play();
             simingshan_video2.play();
             simingshan_video3.play();
+        }
+
+        // 播放所有视频
+        function playAllVideos_pavilion() {
+            var pavilion_video1 = document.getElementById("pavilion_video1");
+            var pavilion_video2 = document.getElementById("pavilion_video2");
+            var pavilion_video3 = document.getElementById("pavilion_video3");
+    
+            // 同时播放所有视频
+            pavilion_video1.play();
+            pavilion_video2.play();
+            pavilion_video3.play();
+        }
+    
+        // 停止所有视频，并保持在当前播放位置
+        function stopAllVideos_pavilion() {
+            var pavilion_video1 = document.getElementById("pavilion_video1");
+            var pavilion_video2 = document.getElementById("pavilion_video2");
+            var pavilion_video3 = document.getElementById("pavilion_video3");
+    
+            // 暂停所有视频
+            pavilion_video1.pause();
+            pavilion_video2.pause();
+            pavilion_video3.pause();
+        }
+
+        // 重置所有视频并从头播放
+        function restartAllVideos_pavilion() {
+            var pavilion_video1 = document.getElementById("pavilion_video1");
+            var pavilion_video2 = document.getElementById("pavilion_video2");
+            var pavilion_video3 = document.getElementById("pavilion_video3");
+
+            // 重置播放位置为 0（从头开始）
+            pavilion_video1.currentTime = 0;
+            pavilion_video2.currentTime = 0;
+            pavilion_video3.currentTime = 0;
+
+            // 播放所有视频
+            pavilion_video1.play();
+            pavilion_video2.play();
+            pavilion_video3.play();
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
