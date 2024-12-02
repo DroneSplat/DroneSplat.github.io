@@ -195,13 +195,17 @@
 
 
     <!-- 视频标题 -->
-    <div class="d-flex justify-content-center align-items-center" style="width: 100%; padding-bottom: 20px;">
-        <div class="video-title">
-            Simingshan
+    <div class="d-flex justify-content-between align-items-center" style="width: 100%; padding-bottom: 20px;">
+        <!-- Simingshan 居中显示 -->
+        <div class="mx-auto">
+            <div class="video-title">
+                Simingshan
+            </div>
         </div>
-        <!-- 视频控制按钮区域 -->
-        <div class="ml-auto">
-           <!-- Play 按钮 -->
+
+        <!-- 视频控制按钮区域，按钮右对齐 -->
+        <div>
+            <!-- Play 按钮 -->
             <button class="btn btn-success" onclick="playAllVideos_simingshan()" style="margin-left: 20px; font-weight: bold; width: 80px;">Play</button>
             <!-- Stop 按钮 -->
             <button class="btn btn-danger" onclick="stopAllVideos_simingshan()" style="margin-left: 10px; font-weight: bold; width: 80px;">Stop</button>
