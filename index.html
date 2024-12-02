@@ -34,7 +34,12 @@
             padding: 1rem 0; /* 上下内边距调整为 1rem */
         }
         .video-container {
-            margin-bottom: 1.5rem; /* 减少每行视频部分的下边距 */
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;  /* 保证视频之间有足够的间隔 */
+        }
+        .video-container .col-md-4 {
+            padding: 0 10px; /* 可选，给每个视频添加水平间距 */
         }
         .video-title {
             font-size: 2rem; /* 视频标题的字体大小 */
@@ -195,21 +200,21 @@
             <!-- 视频行 -->
             <div class="row video-container">
                 <!-- 第一个视频及其标题 -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="video-label">3DGS</div>
                     <video controls width="100%">
                         <source src="videos/simingshan/simingshan_3dgs.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第二个视频及其标题 -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="video-label">GS-W</div>
                     <video controls width="100%">
                         <source src="videos/simingshan/simingshan_gsw.mp4" type="video/mp4">
                     </video>
                 </div>
                 <!-- 第三个视频及其标题 -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="video-label">DroneSplat</div>
                     <video controls width="100%">
                         <source src="videos/simingshan/simingshan_dronesplat.mp4" type="video/mp4">
