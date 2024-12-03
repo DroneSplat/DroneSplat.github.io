@@ -94,6 +94,24 @@
             margin-top: 0rem; /* 增加横线的顶部间距 */
             margin-bottom: 1.5rem; /* 增加横线的底部间距 */
         }
+        .dataset-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .dataset-container {
+            display: flex;
+            justify-content: space-around; /* 视频之间的间隔 */
+            margin-bottom: 20px; /* 每一行视频之间的间距 */
+        }
+        .video-item {
+            flex: 1;
+            max-width: 200px;
+            margin: 10px; /* 每个视频之间的间距 */
+        }
+        .video-item video {
+            width: 100%; /* 视频宽度自适应 */
+            height: auto; /* 保持视频比例 */
+        }
     </style>
 </head>
 
@@ -197,6 +215,94 @@
         </div>
     </section>
 
+    <div class="dataset-section">
+        <h2 class="large-title">Dataset</h2>
+        <div class="dataset-container">
+            <!-- 第一行视频 -->
+            <div class="video-item">
+                <video src="dataset/1.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/2.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/3.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/4.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/5.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/6.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+        </div>
+        <div class="dataset-container">
+            <!-- 第二行视频 -->
+            <div class="video-item">
+                <video src="dataset/7.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/8.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/9.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/10.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/11.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/12.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+        </div>
+        <div class="dataset-container">
+            <!-- 第三行视频 -->
+            <div class="video-item">
+                <video src="dataset/13.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/14.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/15.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/16.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/17.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/18.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+        </div>
+        <div class="dataset-container">
+            <!-- 第四行视频 -->
+            <div class="video-item">
+                <video src="dataset/19.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/20.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/21.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/22.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/23.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <video src="dataset/24.mp4" width="200" height="150" loop autoplay muted></video>
+            </div>
+        </div>
+    </div>
+    
     
 
     <!-- 视频标题 -->
