@@ -101,8 +101,7 @@
         }
         .dataset-container {
             display: flex;
-            justify-content: space-around; /* 视频之间的间隔 */
-            margin-bottom: 20px; /* 每一行视频之间的间距 */
+            justify-content: space-between;  /* 保证视频之间有足够的间隔 */
         }
         .video-item {
             flex: 1;
@@ -222,7 +221,7 @@
             <div class="module-title">DroneSplat Dataset</div>
             <hr class="gray-line">
             <div class="module-content">
-                <div class="video-container">
+                <div class="dataset-container">
                     <!-- 第1行视频 -->
                     <div class="video-item">
                         <video src="dataset/1.mp4" width="200" height="150" loop autoplay muted></video>
@@ -245,7 +244,7 @@
                 </div>
             </div>
             <div class="module-content">
-                <div class="video-container">
+                <div class="dataset-container">
                     <!-- 第2行视频 -->
                     <div class="video-item">
                         <video src="dataset/7.mp4" width="200" height="150" loop autoplay muted></video>
@@ -268,7 +267,7 @@
                 </div>
             </div>
             <div class="module-content">
-                <div class="video-container">
+                <div class="dataset-container">
                      <!-- 第3行视频 -->
                     <div class="video-item">
                         <video src="dataset/13.mp4" width="200" height="150" loop autoplay muted></video>
@@ -291,7 +290,7 @@
                 </div>
             </div>
             <div class="module-content">
-                <div class="video-container">
+                <div class="dataset-container">
                      <!-- 第4行视频 -->
                     <div class="video-item">
                         <video src="dataset/19.mp4" width="200" height="150" loop autoplay muted></video>
